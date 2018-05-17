@@ -383,6 +383,21 @@
           <GroupName>CMSIS</GroupName>
           <Files>
             <File>
+              <FileName>stm32f4xx.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32f4xx.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Startup</GroupName>
+          <Files>
+            <File>
               <FileName>startup_stm32f429_439xx.s</FileName>
               <FileType>2</FileType>
               <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429_439xx.s</FilePath>
@@ -425,20 +440,7 @@
                 </FileArmAds>
               </FileOption>
             </File>
-            <File>
-              <FileName>stm32f4xx.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</FilePath>
-            </File>
-            <File>
-              <FileName>system_stm32f4xx.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h</FilePath>
-            </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>Startup</GroupName>
         </Group>
         <Group>
           <GroupName>STD_Periph_Drivers</GroupName>
@@ -1018,6 +1020,21 @@
           <GroupName>CMSIS</GroupName>
           <Files>
             <File>
+              <FileName>stm32f4xx.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32f4xx.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Startup</GroupName>
+          <Files>
+            <File>
               <FileName>startup_stm32f429_439xx.s</FileName>
               <FileType>2</FileType>
               <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429_439xx.s</FilePath>
@@ -1060,20 +1077,7 @@
                 </FileArmAds>
               </FileOption>
             </File>
-            <File>
-              <FileName>stm32f4xx.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</FilePath>
-            </File>
-            <File>
-              <FileName>system_stm32f4xx.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h</FilePath>
-            </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>Startup</GroupName>
         </Group>
         <Group>
           <GroupName>STD_Periph_Drivers</GroupName>
@@ -1652,6 +1656,21 @@
           <GroupName>CMSIS</GroupName>
           <Files>
             <File>
+              <FileName>stm32f4xx.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32f4xx.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Startup</GroupName>
+          <Files>
+            <File>
               <FileName>startup_stm32f429_439xx.s</FileName>
               <FileType>2</FileType>
               <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429_439xx.s</FilePath>
@@ -1694,20 +1713,7 @@
                 </FileArmAds>
               </FileOption>
             </File>
-            <File>
-              <FileName>stm32f4xx.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</FilePath>
-            </File>
-            <File>
-              <FileName>system_stm32f4xx.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h</FilePath>
-            </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>Startup</GroupName>
         </Group>
         <Group>
           <GroupName>STD_Periph_Drivers</GroupName>
@@ -2286,6 +2292,21 @@
           <GroupName>CMSIS</GroupName>
           <Files>
             <File>
+              <FileName>stm32f4xx.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32f4xx.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Startup</GroupName>
+          <Files>
+            <File>
               <FileName>startup_stm32f429_439xx.s</FileName>
               <FileType>2</FileType>
               <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429_439xx.s</FilePath>
@@ -2328,20 +2349,7 @@
                 </FileArmAds>
               </FileOption>
             </File>
-            <File>
-              <FileName>stm32f4xx.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</FilePath>
-            </File>
-            <File>
-              <FileName>system_stm32f4xx.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\00-STM32F4xx_STANDARD_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h</FilePath>
-            </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>Startup</GroupName>
         </Group>
         <Group>
           <GroupName>STD_Periph_Drivers</GroupName>
