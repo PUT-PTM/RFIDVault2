@@ -223,6 +223,10 @@ int main(void) {
 								TM_PWM_SetChannelMicros(&TIM2_Data, TM_PWM_Channel_1, position);
 								Delayms(3000);
 							} else if (pinStart == 1) {
+								TM_ILI9341_Puts(80, 100, "*", &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
+								TM_ILI9341_Puts(120, 100, "*", &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
+								TM_ILI9341_Puts(160, 100, "*", &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
+								TM_ILI9341_Puts(200, 100, "*", &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
 								clearPin(TempPin);
 								pinStart = 0;
 								TM_ILI9341_Puts(35, 170, "Niepoprawny kod!", &TM_Font_16x26, ILI9341_COLOR_RED, ILI9341_COLOR_BLACK);
