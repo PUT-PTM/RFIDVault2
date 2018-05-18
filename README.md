@@ -4,6 +4,8 @@ Ile razy miałeś tak, że chciałeś zabezpieczyć drogocenne przedmioty czy pi
 Nasz projekt jest to sejf wykorzystujący technologię RFID oraz awaryjne otwieranie, w przypadku braku karty lub breloka,  czyli klasyczny pin, co oznacza, że zawsze masz dostęp do swoich skarbów. 
 
 [EN]
+How many times have you wanted to protect precious things or your money from /unauthorized hands/. Socks? Well, it might seem like a good solution, but keeping your money there won't protect it from stealing. Do you like to have control over money? We've made our project for people like you!
+Our project is a safe, that uses RFID technology. It also has emergency open - in case you forget your card or pendant you can use a PIN number, which means you always have access to your treasures.
 
 ## Description 
 [PL]
