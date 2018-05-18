@@ -7,26 +7,26 @@
 - bardziej rozbudowany opis projektu - z czego się składa (np. aplikacji na PC i STM32), główne moduły, metodologia wykorzystana do tworzenia.
 
 
-### Tools 
-> Keil uVision v5.25.2.0
-> STM32F429 32BIT Cortex M4 MCU with 2,4" QVGA TFT LCD display
+## Tools 
+Keil uVision v5.25.2.0
+STM32F429 32BIT Cortex M4 MCU with 2,4" QVGA TFT LCD display
 
-##### How to compile
+## How to compile
 1. Download repository
 2. Compile
 3. Have fun
 
-###### Future improvements
+### Future improvements
 You found something that we could improve? Make issue and we maybe try to fix it ;)
 
-####### Attributions 
+### Attributions 
 All Libraries by Tilen Majerle 
 More information and documentation here > http://stm32f4-discovery.net
 
-######## License 
+### License 
 MIT
 
-######### Credits
+### Credits
 Krzysztof Wieczorek <krzysiu_1996@o2.pl>
 Jakub Werwiński <werwa999@gmail.com>
 
