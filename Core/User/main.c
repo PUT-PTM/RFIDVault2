@@ -119,6 +119,9 @@ int main(void) {
 				TM_ILI9341_Puts(10, 130, "Nie rozpoznano", &TM_Font_16x26, ILI9341_COLOR_RED, ILI9341_COLOR_BLACK);
 				TM_ILI9341_Puts(10, 150, "identyfikatora", &TM_Font_16x26, ILI9341_COLOR_RED, ILI9341_COLOR_BLACK);
 			}
+			clearPin(TempPin);
+			pinStart = 0;
+			
 			/* CardID check */
 			/*
 			TM_ILI9341_Puts(10, 10, "Wykryto karte", &TM_Font_11x18, 0x00, 0xFFFF);
@@ -207,6 +210,7 @@ int main(void) {
 							break;
 					case TM_KEYPAD_Button_HASH:        /* Button HASH pressed */
 							if(pinStart == 1 && comparePin(TempPin, activeUser) == 1){
+								TM_ILI9341_Puts(200, 100, "*", &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
 								clearPin(TempPin);
 								pinStart = 0;
 								if (position == 900) {
@@ -292,20 +296,32 @@ int main(void) {
 				} else if(pinStart == 1 && pinChange == 1){
 					pinChange = 0;
 					if(TempPin[0] != 99){
-						sprintf(buff, "%d", TempPin[0]);
-						TM_ILI9341_Puts(80, 100, buff, &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
+						if(TempPin[1] != 99){
+							TM_ILI9341_Puts(80, 100, "*", &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
+						} else {
+							sprintf(buff, "%d", TempPin[0]);
+							TM_ILI9341_Puts(80, 100, buff, &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
+						}
 					} else {
 						TM_ILI9341_Puts(80, 100, "_", &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
 					}						
 					if(TempPin[1] != 99){
-						sprintf(buff, "%d", TempPin[1]);
-						TM_ILI9341_Puts(120, 100, buff, &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
+						if(TempPin[2] != 99){
+							TM_ILI9341_Puts(120, 100, "*", &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
+						} else {
+							sprintf(buff, "%d", TempPin[1]);
+							TM_ILI9341_Puts(120, 100, buff, &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
+						}
 					} else {
 						TM_ILI9341_Puts(120, 100, "_", &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
 					}
 					if(TempPin[2] != 99){
-						sprintf(buff, "%d", TempPin[2]);
-						TM_ILI9341_Puts(160, 100, buff, &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
+						if(TempPin[3] != 99){
+							TM_ILI9341_Puts(160, 100, "*", &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
+						} else {
+							sprintf(buff, "%d", TempPin[2]);
+							TM_ILI9341_Puts(160, 100, buff, &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
+						}
 					} else {
 						TM_ILI9341_Puts(160, 100, "_", &TM_Font_16x26, ILI9341_COLOR_WHITE, ILI9341_COLOR_BLACK);
 					}						
