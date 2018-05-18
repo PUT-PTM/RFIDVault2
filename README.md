@@ -1,12 +1,24 @@
 # Overview 
-[PL] Ile razy miałeś tak, że chciałeś zabezpieczyć drogocenne przedmioty czy pieniądze przez niepowołanymi rękami. Skarpety? No jest to jakieś wyjście ale trzymanie pieniędzy tam raczej mało uchroni je przed kradzieżą. Banki? Jesteś zwolennikiem, (typowym Polakiem) co woli mieć kontrole nad pieniądzem? Właśnie myśląc o takich ludziach stworzyliśmy nasz projekt! 
+[PL] 
+Ile razy miałeś tak, że chciałeś zabezpieczyć drogocenne przedmioty czy pieniądze przez niepowołanymi rękami. Skarpety? No jest to jakieś wyjście ale trzymanie pieniędzy tam raczej mało uchroni je przed kradzieżą. Banki? Jesteś osobą(typowym Polakiem), co woli mieć kontrole nad pieniądzem? Właśnie myśląc o takich ludziach stworzyliśmy nasz projekt! 
 Nasz projekt jest to sejf wykorzystujący technologię RFID oraz awaryjne otwieranie, w przypadku braku karty lub breloka,  czyli klasyczny pin, co oznacza, że zawsze masz dostęp do swoich skarbów. 
 
 [EN]
 
 ## Description 
 [PL]
-- bardziej rozbudowany opis projektu - z czego się składa (np. aplikacji na PC i STM32), główne moduły, metodologia wykorzystana do tworzenia.
+W naszym projekcie wykorzystaliśmy: 
+Elektronika:
+- STM32F429I-DISCO - zestaw uruchomieniowy z mikrokontrolerem i wbudowanym wyświetlaczem
+- moduł czytnika RFID RC522 13,56MHz + karta + brelok
+- klawiatura membranowa 4 x 4
+- serwomechanizm modelarski TowerPro SG90
+- listwa led z lampki na USB
+- powerbank 11000mAh
+- wyłącznik krańcowy
+Obudowa:
+- sklejka 
+- dibond (płyta kompozytowa)
 [EN]
 
 ## Tools 
