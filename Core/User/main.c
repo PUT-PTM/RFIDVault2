@@ -98,7 +98,7 @@ int main(void) {
 					TM_ILI9341_Puts(50, 150, "Zamek otwarty", &TM_Font_16x26, ILI9341_COLOR_GREEN, ILI9341_COLOR_BLACK);
 				} else {
 					position = 900;
-					TM_ILI9341_Puts(70, 80, "Dowidzenia!", &TM_Font_16x26, ILI9341_COLOR_GREEN, ILI9341_COLOR_BLACK);
+					TM_ILI9341_Puts(65, 80, "Do widzenia!", &TM_Font_16x26, ILI9341_COLOR_GREEN, ILI9341_COLOR_BLACK);
 					TM_ILI9341_Puts(40, 150, "Zamek zamkniety", &TM_Font_16x26, ILI9341_COLOR_GREEN, ILI9341_COLOR_BLACK);
 				}
 				TM_PWM_SetChannelMicros(&TIM2_Data, TM_PWM_Channel_1, position);	
@@ -110,7 +110,7 @@ int main(void) {
 					TM_ILI9341_Puts(50, 150, "Zamek otwarty", &TM_Font_16x26, ILI9341_COLOR_GREEN, ILI9341_COLOR_BLACK);
 				} else {
 					position = 900;
-					TM_ILI9341_Puts(70, 80, "Dowidzenia!", &TM_Font_16x26, ILI9341_COLOR_GREEN, ILI9341_COLOR_BLACK);
+					TM_ILI9341_Puts(65, 80, "Do widzenia!", &TM_Font_16x26, ILI9341_COLOR_GREEN, ILI9341_COLOR_BLACK);
 					TM_ILI9341_Puts(40, 150, "Zamek zamkniety", &TM_Font_16x26, ILI9341_COLOR_GREEN, ILI9341_COLOR_BLACK);
 				}
 				TM_PWM_SetChannelMicros(&TIM2_Data, TM_PWM_Channel_1, position);	
