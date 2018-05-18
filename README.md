@@ -9,6 +9,7 @@ Our project is a safe, that uses RFID technology. It also has emergency open - i
 
 ## Description 
 [PL]
+
 W naszym projekcie wykorzystaliśmy: 
 Elektronika:
 - STM32F429I-DISCO - zestaw uruchomieniowy z mikrokontrolerem i wbudowanym wyświetlaczem
@@ -21,39 +22,40 @@ Elektronika:
 Obudowa:
 - sklejka 
 - dibond (płyta kompozytowa)
+
 [EN]
 
-- Keypad
-	C1	>	PD0			//Keypad COLUMN 1
-	C2	>	PD1			//Keypad COLUMN 2
-	C3	>	PD2			//Keypad COLUMN 3
-	C4	>	PD3			//Keypad COLUMN 4 (not used on small size)
-	R1	>	PC1			//Keypad ROW 1
-	R2	>	PC4			//Keypad ROW 2
-	R3	>	PC3			//Keypad ROW 3
-	R4	>	PC5			//Keypad ROW 4
+- Keypad<br />
+	C1	>	PD0			//Keypad COLUMN 1<br />
+	C2	>	PD1			//Keypad COLUMN 2<br />
+	C3	>	PD2			//Keypad COLUMN 3<br />
+	C4	>	PD3			//Keypad COLUMN 4 (not used on small size)<br />
+	R1	>	PC1			//Keypad ROW 1<br />
+	R2	>	PC4			//Keypad ROW 2<br />
+	R3	>	PC3			//Keypad ROW 3<br />
+	R4	>	PC5			//Keypad ROW 4<br />
 	
-- LCD Screen (Built in - pins from documentation)
-	SDO		>	PF8		//Output from LCD for SPI	Not used, can be left
-	LED		>	3.3V	//Backlight	
-	SCK		>	PF7		//SPI clock	
-	SDI		>	(MOSI)	//PF9	SPI master output	
-	D/C		>	PD13	//Data/Command register	
-	RESET	>	PD12	//Reset LCD	Not used on discovery board
-	CS		>	PC2		//Chip select for SPI	
-	GND		>	GND		//Ground	
-	VCC		>	3.3V	//Positive power supply
+- LCD Screen (Built in - pins from documentation)<br />
+	SDO		>	PF8		//Output from LCD for SPI	Not used, can be left<br />
+	LED		>	3.3V	//Backlight	<br />
+	SCK		>	PF7		//SPI clock	<br />
+	SDI		>	(MOSI)	//PF9	SPI master output	<br />
+	D/C		>	PD13	//Data/Command register	<br />
+	RESET	>	PD12	//Reset LCD	Not used on discovery board<br />
+	CS		>	PC2		//Chip select for SPI	<br />
+	GND		>	GND		//Ground	<br />
+	VCC		>	3.3V	//Positive power supply<br />
 	
-- MF RC522 (RFID Reader)
-	CS(SDA)	>	PG2		//Chip select for SPI
-	SCK		>	PB3		//Serial Clock for SPI
-	MISO	>	PB4		//Master In Slave Out for SPI
-	MOSI	>	PB5		//Master Out Slave In for SPI
-	GND		>	GND		//Ground
-	VCC		>	3.3V	//3.3V power
-	RST		>	3.3V	//Reset pin
-- SERVO
-	PWM		>	PA5
+- MF RC522 (RFID Reader)<br />
+	CS(SDA)	>	PG2		//Chip select for SPI<br />
+	SCK		>	PB3		//Serial Clock for SPI<br />
+	MISO	>	PB4		//Master In Slave Out for SPI<br />
+	MOSI	>	PB5		//Master Out Slave In for SPI<br />
+	GND		>	GND		//Ground<br />
+	VCC		>	3.3V	//3.3V power<br />
+	RST		>	3.3V	//Reset pin<br />
+- SERVO<br />
+	PWM		>	PA5<br />
 
 ## Tools 
 Keil uVision v5.25.2.0
