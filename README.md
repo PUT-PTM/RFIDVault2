@@ -11,7 +11,7 @@ Our project is a safe, that uses RFID technology. It also has emergency open - i
 [PL]
 
 W naszym projekcie wykorzystaliśmy: 
-Elektronika:
+### Elektronika:
 - STM32F429I-DISCO - zestaw uruchomieniowy z mikrokontrolerem i wbudowanym wyświetlaczem
 - moduł czytnika RFID RC522 13,56MHz + karta + brelok
 - klawiatura membranowa 4 x 4
@@ -19,11 +19,48 @@ Elektronika:
 - listwa led z lampki na USB
 - powerbank 11000mAh
 - wyłącznik krańcowy
-Obudowa:
+
+### Obudowa:
 - sklejka 
 - dibond (płyta kompozytowa)
 
+### Podłączenie pinów
+
+- Klawiatura<br />
+	C1	>	PD0			//Klawiatura KOLUMNA 1<br />
+	C2	>	PD1			//Klawiatura KOLUMNA 2<br />
+	C3	>	PD2			//Klawiatura KOLUMNA 3<br />
+	C4	>	PD3			//Klawiatura KOLUMNA 4 (nie wykorzystane w mniejszej klawiaturze)<br />
+	R1	>	PC1			//Klawiatura WIERSZ 1<br />
+	R2	>	PC4			//Klawiatura WIERSZ 2<br />
+	R3	>	PC3			//Klawiatura WIERSZ 3<br />
+	R4	>	PC5			//Klawiatura WIERSZ 4<br />
+	
+- Ekran LCD (Wbudowany w płytkę - Piny z dokumentacji)<br />
+	SDO		>	PF8		//Output from LCD for SPI	Not used, can be left<br />
+	LED		>	3.3V	//Backlight	<br />
+	SCK		>	PF7		//SPI clock	<br />
+	SDI		>	PF9		//SPI master output	<br />
+	D/C		>	PD13	//Data/Command register	<br />
+	RESET	>	PD12	//Reset LCD	Not used on discovery board<br />
+	CS		>	PC2		//Chip select for SPI	<br />
+	GND		>	GND		//Ground	<br />
+	VCC		>	3.3V	//Positive power supply<br />
+	
+- MF RC522 (Czytnik RFID)<br />
+	CS(SDA)	>	PG2		//Chip select for SPI<br />
+	SCK		>	PB3		//Serial Clock for SPI<br />
+	MISO	>	PB4		//Master In Slave Out for SPI<br />
+	MOSI	>	PB5		//Master Out Slave In for SPI<br />
+	GND		>	GND		//Ground<br />
+	VCC		>	3.3V	//3.3V power<br />
+	RST		>	3.3V	//Reset pin<br />
+- SERWO<br />
+	PWM		>	PA5<br />
+
 [EN]
+
+### Pinout
 
 - Keypad<br />
 	C1	>	PD0			//Keypad COLUMN 1<br />
