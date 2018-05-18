@@ -21,6 +21,38 @@ Obudowa:
 - dibond (płyta kompozytowa)
 [EN]
 
+- Keypad
+	C1	>	PD0			//Keypad COLUMN 1
+	C2	>	PD1			//Keypad COLUMN 2
+	C3	>	PD2			//Keypad COLUMN 3
+	C4	>	PD3			//Keypad COLUMN 4 (not used on small size)
+	R1	>	PC1			//Keypad ROW 1
+	R2	>	PC4			//Keypad ROW 2
+	R3	>	PC3			//Keypad ROW 3
+	R4	>	PC5			//Keypad ROW 4
+	
+- LCD Screen (Built in - pins from documentation)
+	SDO		>	PF8		//Output from LCD for SPI	Not used, can be left
+	LED		>	3.3V	//Backlight	
+	SCK		>	PF7		//SPI clock	
+	SDI		>	(MOSI)	//PF9	SPI master output	
+	D/C		>	PD13	//Data/Command register	
+	RESET	>	PD12	//Reset LCD	Not used on discovery board
+	CS		>	PC2		//Chip select for SPI	
+	GND		>	GND		//Ground	
+	VCC		>	3.3V	//Positive power supply
+	
+- MF RC522 (RFID Reader)
+	CS(SDA)	>	PG2		//Chip select for SPI
+	SCK		>	PB3		//Serial Clock for SPI
+	MISO	>	PB4		//Master In Slave Out for SPI
+	MOSI	>	PB5		//Master Out Slave In for SPI
+	GND		>	GND		//Ground
+	VCC		>	3.3V	//3.3V power
+	RST		>	3.3V	//Reset pin
+- SERVO
+	PWM		>	PA5
+
 ## Tools 
 Keil uVision v5.25.2.0
 
