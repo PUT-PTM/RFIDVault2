@@ -86,10 +86,10 @@ int main(void) {
 	while (1) {
 		if (TM_MFRC522_Check(CardID) == MI_OK) {
 			/* CardID is valid */
-			if(lastview != 1) {
+			//if(lastview != 1) {
 				TM_ILI9341_Fill(ILI9341_COLOR_BLACK);
 				lastview = 1;
-			}
+			//}
 			
 			if (TM_MFRC522_Compare(CardID, MyIDB) == MI_OK) {				
 				if (position == 900) {
@@ -106,11 +106,11 @@ int main(void) {
 			} else if (TM_MFRC522_Compare(CardID, MyIDK) == MI_OK) {
 				if (position == 900) {
 					position = 400;
-					TM_ILI9341_Puts(10, 100, "Witaj WerVa!", &TM_Font_16x26, ILI9341_COLOR_GREEN, ILI9341_COLOR_BLACK);
+					TM_ILI9341_Puts(60, 80, "Witaj WerVa!", &TM_Font_16x26, ILI9341_COLOR_GREEN, ILI9341_COLOR_BLACK);
 					TM_ILI9341_Puts(50, 150, "Zamek otwarty", &TM_Font_16x26, ILI9341_COLOR_GREEN, ILI9341_COLOR_BLACK);
 				} else {
 					position = 900;
-					TM_ILI9341_Puts(10, 100, "Dowidzenia!", &TM_Font_16x26, ILI9341_COLOR_GREEN, ILI9341_COLOR_BLACK);
+					TM_ILI9341_Puts(70, 80, "Dowidzenia!", &TM_Font_16x26, ILI9341_COLOR_GREEN, ILI9341_COLOR_BLACK);
 					TM_ILI9341_Puts(40, 150, "Zamek zamkniety", &TM_Font_16x26, ILI9341_COLOR_GREEN, ILI9341_COLOR_BLACK);
 				}
 				TM_PWM_SetChannelMicros(&TIM2_Data, TM_PWM_Channel_1, position);	
