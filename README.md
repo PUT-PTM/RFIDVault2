@@ -60,6 +60,20 @@ W naszym projekcie wykorzystaliśmy:
 
 [EN]
 
+In our project we used:
+### Electronics:
+- STM32F429I-DISCO - with LCD
+- reader RFID RC522 13,56MHz + card + pendant
+- matrix keyboard 4 x 4
+- servo TowerPro SG90
+- led strip with a usb lamp
+- powerbank 11000mAh
+- limit switch
+
+### Case:
+- plywood 
+- dibond 
+
 ### Pinout
 
 - Keypad<br />
